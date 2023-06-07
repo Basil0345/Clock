@@ -16,7 +16,7 @@ setInterval(() => {
 const days = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
 
 function formatAMPM(date) {
-    let hours = 1;
+    let hours = date.getHours();
     let minutes = date.getMinutes();
     let ampm = hours >= 12 ? 'PM' : 'AM';
     hours = hours % 12;
