@@ -28,7 +28,7 @@ function formatAMPM(date) {
 }
 
 function date(d) {
-    let day = d.getDay();
+    let day = d.getDate();
     let year = d.getFullYear();
     day = day < 10 ? `0${day}` : day;
     let dayName = days[d.getDay()];
